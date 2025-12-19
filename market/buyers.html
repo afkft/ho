@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buyer Management — Intelligent Marketplace</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="pproduct.js"></script>
+<!-- product here -->
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f6f8;
+  margin:0;
+}
+.page{
+  display:none;
+  padding:20px;
+}
+.page.active{
+  display:block;
+}
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);
+}
+img{
+  width:40%;
+  max-width:130px;
+  display:block;
+  margin:auto;
+  border-radius:8px;
+}
+h2,h3{text-align:center;}
+.btn{
+  width:100%;
+  padding:18px;
+  font-size:18px;
+  font-weight:bold;
+  border:none;
+  border-radius:12px;
+  margin-top:12px;
+  cursor:pointer;
+}
+.green{background:#28a745;color:#fff;}
+.red{background:#dc3545;color:#fff;}
+.blue{background:#007bff;color:#fff;}
+.gray{background:#6c757d;color:#fff;}
+textarea,input{width:100%;padding:12px;margin-top:10px;}
+
+/* ===== PLEASE WAIT LOADER (ADDED ONLY) ===== */
+#loader{
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+#loader p{
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.spinner{
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin{
+  to{ transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== PLEASE WAIT LOADER (ADDED ONLY) ===== -->
+<div id="loader">
+  <div class="spinner"></div>
+  <p>Please wait...</p>
+</div>
+
+<!-- PAGE 1: PRODUCT -->
+<div class="page active" id="pageProduct">
+  <div class="card" id="productBox"></div>
+  <button class="btn green" onclick="goRelease()">Release Funds</button>
+  <button class="btn red" onclick="goRefund()">Refund</button>
+  <button class="btn blue" onclick="goSeller()">Message Seller</button>
+</div>
+
+<!-- PAGE 2: RELEASE CONFIRM -->
+<div class="page" id="pageReleaseConfirm">
+  <div class="card">
+    <h3>Confirm Release</h3>
+    <p id="releaseConfirmText"></p>
+    <button class="btn green" onclick="submitRelease()">Yes I am very sure</button>
+    <button class="btn gray" onclick="back()">No</button>
+  </div>
+</div>
+
+<!-- PAGE 3: RELEASE SUCCESS -->
+<div class="page" id="pageReleaseSuccess">
+  <div class="card">
+    <h3>Funds release request is successful 👊👍</h3>
+    <button class="btn gray" onclick="back()">Back to product</button>
+  </div>
+</div>
+
+<!-- PAGE 4: REFUND CONFIRM -->
+<div class="page" id="pageRefundConfirm">
+  <div class="card">
+    <h3>Confirm Refund</h3>
+    <p id="refundConfirmText"></p>
+    <button class="btn red" onclick="showRefundForm()">Yes I want to refund</button>
+    <button class="btn gray" onclick="back()">No</button>
+  </div>
+</div>
+
+<!-- PAGE 5: REFUND FORM -->
+<div class="page" id="pageRefundForm">
+  <div class="card">
+    <h3>Refund Request</h3>
+    <textarea id="refundReason" placeholder="Refund reason"></textarea>
+    <input type="file" id="refundProof" accept="image/*">
+    <button class="btn red" onclick="submitRefund()">Submit Refund</button>
+  </div>
+</div>
+
+<!-- PAGE 6: REFUND SUCCESS -->
+<div class="page" id="pageRefundSuccess">
+  <div class="card">
+    <h3>Refund request submitted successfully ✅</h3>
+    <button class="btn gray" onclick="back()">Back to product</button>
+  </div>
+</div>
+
+<!-- PAGE 7: SELLER -->
+<div class="page" id="pageSeller">
+  <div class="card">
+    <h3>Seller Details</h3>
+    <p id="sellerInfo"></p>
+    <button class="btn gray" onclick="back()">Back</button>
+  </div>
+</div>
+
+<!-- PAGE 8: ERROR -->
+<div class="page" id="pageError">
+  <div class="card">
+    <h3>❌ Something went wrong</h3>
+    <p id="errorText"></p>
+    <button class="btn gray" onclick="back()">Back</button>
+  </div>
+</div>
+
+<!-- YOUR JS MOVED TO EXTERNAL FILE (NO CODE REMOVED, JUST RELOCATED) -->
+<script src="pmain.js"></script>
+
+</body>
+</html>
