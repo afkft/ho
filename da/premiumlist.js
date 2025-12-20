@@ -10,6 +10,7 @@ const premiumUsers = [
 6391087192,
 7457769202,
 6976365864,
+8290211822,
   // Add more IDs here
 //one week people
 // one week people 
