@@ -13,6 +13,5 @@ const premiumUsers = [
 8290211822,
   // Add more IDs here
 //one week people
-8061518637, //Expired on Dec 31 2025
 // one week people 
 ];
