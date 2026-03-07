@@ -15,10 +15,8 @@ const premiumUsers = [
 1453573199,
 5085293272,
 8553267554,
+8307830690,
   // Add more IDs here
 //one week people
 // one week people 
-1945280994, // Feb 18 2026
-8222887331, // march 3 2026
-6615602981, // march 8 2026
 ];
